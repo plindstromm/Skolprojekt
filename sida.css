@@ -1,182 +1,255 @@
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    
- }
- 
- .header{
- 
-    width: 100%;
-    height: 90px;
-    display: block;
-    background-color:#101010 ;
-    position: sticky;
-    top: 0;
- 
- }
- .logo{
-    height: 100%;
-    display: table;
-    float: left;
-    margin-left: 40px;
- }
- 
- .logo h1{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-family: montserrat;
-    font-size: 32px;
-    font-weight: 1000;
-    
- }
- .logo h1 span{
-    font-weight: 100;
- 
- }
- 
- .navigation{
-      
-    float: right;
-    height: 90%;
-    width: 390px;
-    display: flex;
-    border: solid;
-    border-radius: 50px;
-    margin-right: 60px;
-   margin-top: 5px;
- }
- 
- #search{
-   margin: auto;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   
+}
+
+.header{
+
+   width: 100%;
+   height: 90px;
+   display: block;
+   background-color:#101010 ;
+   position: sticky;
+   top: 0px;
+  
+
+}
+.logo{
+   height: 100%;
+   display: table;
+   float: left;
+   margin-left: 40px;
+  
+}
+
+.logo h1{
    color: white;
- }
- 
- .button{
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px ;
-    
- }
- 
- .button li{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: white;   
-    
+   height: 100%;
+   display: table-cell;
+   vertical-align: middle;
+   font-family: montserrat;
+   font-size: 32px;
+   font-weight: 1000;
    
- }
- .button :hover{
-    cursor: pointer;
-    border-bottom: solid 1px #fff;
-   text-decoration-color: none;
- }
- 
- 
- .main{
-    width: 100%;
-    height: 1000px;
-    background-image: url(/gold.jpg);
-    background-size: cover; 
- }
- 
- 
- 
- 
- footer{
-    background-color: #111;
-    height: auto;
-    width: 100vw;
-    padding-top: 40px;
-    color: #fff;
-    
- }
- 
- .footer-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
- }
- 
- .footer-content h3{
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-transform: capitalize;
-    line-height: 3rem;
-    font-family: montserrat;
- 
- }
- 
- .footer-content p{
-    max-width: 500px;
-    margin: 10px auto;
-    line-height: 28px;
-    font-size: 14px;
- 
- }
- 
- .socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3 rem 0;
- }
- 
- .socials li{
-    margin: 0 10px;
- }
- 
- .socials a {
-    text-decoration: none;
-    color: white;
- }
- 
- .socials a i{
- font-size: 1.1rem;
- }
- 
- .socials a:hover i{
-    color: rgb(96, 126, 209);
- }
- 
- .footer-bottom{
-    background-color: #000;
-    width: 100vw;
-    padding: 20px 0;
-    text-align: center;
- }
- 
- .footer-bottom p{
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize;
-    margin-top: 15px;
- }
- 
- .footer-bottom span{
-    text-transform: uppercase;
-    opacity: .4;
- }
- 
- @media screen and (max-width: 600px) and (min-width: 415px)  {
-   .logo h1{
-      color: blue;
-   }
- } 
+}
+.logo h1 span{
+   font-weight: 100;
+
+}
+
+.logo :hover{
+   cursor: pointer;
+}
+
+.navigation{
+     
+   float: right;
+   height: 90%;
+   width: 390px;
+   display: flex;
+   border-radius: 50px;
+   margin: 5px 60px 0 0;
+  
+}
+
+#search{
+  margin: auto;
+  color: white;
+}
+
+.button{
+   height: 100%;
+   display: table;
+   float: left;
+   padding: 0px 20px ;
    
- @media screen and (max-width: 414px) {
-   .logo h1{
-      color: red;
-   }
-   .navigation{
-      width: 300px;
-   }
- }
+}
+
+.button li{
+   display: table-cell;
+   vertical-align: middle;
+   height: 100%;
+   color: white;
+      
+  
+}
+
+.button :hover{
+   cursor: pointer;
+   background-color: gray;
+  
+}
+
+.main{
+   width: 100%;
+   height: auto;
+   background-image: url(/img/han.jpg);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.section{
+   border:10px solid gray;
+   height: 90vh;
+
+   position: relative;
+}
+
+.tos{
+   color: white;
+  
+   max-width: 100%;
+   margin: auto;
+
+   height: 30vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   right: 0;
+   left: 100%;
+   top: 0;
+   bottom: 0;
+   margin: auto; 
+}
+
+.tos h1{
+   background-color: #000;
+   padding: 10px;
+   margin-bottom: 0px;
+}
+
+.tos1{
+   color: white;
+  
+   max-width: 100%;
+   margin: auto;
+
+   height: 30vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position:relative;
+   right: 0;
+   left: 100%;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+  margin-bottom: 30rem;
+   margin-top: 50px;
+
+}
+
+.tos1 p{
+   background-color: #000;
+   padding: 20px;
+   padding-left: 40px;
+   padding-right: 40px;
+   word-spacing: 5px;
+}
+
+   
+
+
+
+footer{
+   background-color: #111;
+   height: auto;
+   width: 100vw;
+   padding-top: 40px;
+   color: #fff;
+   
+}
+
+.footer-content{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+}
+
+.footer-content h3{
+   font-size: 1.8rem;
+   font-weight: 400;
+   text-transform: capitalize;
+   line-height: 3rem;
+   font-family: montserrat;
+
+}
+
+.footer-content p{
+   max-width: 500px;
+   margin: 10px auto;
+   line-height: 28px;
+   font-size: 14px;
+
+}
+
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3 rem 0;
+}
+
+.socials li{
+   margin: 0 10px;
+}
+
+.socials a {
+   text-decoration: none;
+   color: white;
+}
+
+.socials a i{
+font-size: 1.1rem;
+}
+
+.socials a:hover i{
+   color: rgb(96, 126, 209);
+}
+
+.footer-bottom{
+   background-color: #000;
+   width: 100vw;
+   padding: 20px 0;
+   text-align: center;
+}
+
+.footer-bottom p{
+   font-size: 14px;
+   word-spacing: 2px;
+   text-transform: capitalize;
+   margin-top: 15px;
+}
+
+.footer-bottom span{
+   text-transform: uppercase;
+   opacity: .4;
+}
+
+@media screen and (max-width: 600px) and (min-width: 415px)  {
+  .logo h1{
+     color: blue;
+  }
+} 
+  
+@media screen and (max-width: 414px) {
+  .logo h1{
+     color: red;
+  }
+  .navigation{
+     width: 300px;
+  }
+  .main{
+   display: block;
+  }
+}
