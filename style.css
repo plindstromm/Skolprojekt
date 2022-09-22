@@ -18,7 +18,7 @@ body {
    position: relative;
    justify-content: space-between;
    align-items: center;
-   background-color: #333;
+   background-color: #111;
    color: white;
 }
 
@@ -73,42 +73,10 @@ body {
    border-radius: 10px;
 }
 
-@media (max-width: 500px) {
-   .navbar {
-       flex-direction: column;
-       align-items: flex-start;
-   }
 
-   .toggle-button {
-       display: flex;
-   }
-
-   .navbar-links {
-       display: none;
-       width: 100%;
-   }
-
-   .navbar-links ul {
-       width: 100%;
-       flex-direction: column;
-   }
-
-   .navbar-links ul li {
-       text-align: center;
-   }
-
-   .navbar-links ul li a {
-       padding: .5rem 1rem;
-   }
-
-   .navbar-links.active {
-       display: flex;
-   }
-}
 
 .main{
    width: 100%;
-   height: auto;
    background-image: url(/img/han.jpg);
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -120,6 +88,7 @@ body {
 .dark-mode{
    color: black;
    background-color: white;
+   
 }
 
 .text{
@@ -194,7 +163,7 @@ body {
 footer{
    background-color: #111;
    height: auto;
-   width: 100vw;
+   width: 100%;
    padding-top: 40px;
    color: #fff;
    
@@ -251,7 +220,7 @@ font-size: 1.1rem;
 
 .footer-bottom{
    background-color: #000;
-   width: 100vw;
+   width: 100%;
    padding: 20px 0;
    text-align: center;
 }
@@ -268,3 +237,35 @@ font-size: 1.1rem;
    opacity: .4;
 }
 
+@media (max-width: 500px) {
+   .navbar {
+       flex-direction: column;
+       align-items: flex-start;
+   }
+
+   .toggle-button {
+       display: flex;
+   }
+
+   .navbar-links {
+       display: none;
+       width: 100%;
+   }
+
+   .navbar-links ul {
+       width: 100%;
+       flex-direction: column;
+   }
+
+   .navbar-links ul li {
+       text-align: center;
+   }
+
+   .navbar-links ul li a {
+       padding: .5rem 1rem;
+   }
+
+   .navbar-links.active {
+       display: flex;
+   }
+}
