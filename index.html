@@ -20,26 +20,36 @@
 
 <body>
 
-    <div class="header">
-           
-            <div class="logo">
-                <h1><span>GET</span>gold</h1>
-            </div>
-            
-            
-       
-
-            <ul class="navigation">
-                <a href="" id="search"><i class="bi bi-search"></i></a>
-                <a class="button"><li>About us</li></a>
-                <a class="button" href="sida.html"><li>Terms of service</li></a>
-                <a class="button"><li>Contact</li></a>
-            </ul>
-        
-
-    </div>
+    <nav class="navbar">
+        <div class="brand-title"><span>Getgold</span></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="sida.html">Terms of service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
 
     <div class="main">
+
+        <div class="darklight">
+            <button onclick="myFunction()">Switch theme</button>
+          </div>
+          <script>
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+            }
+            </script>
+         
+
         <div class="text">
             <div class="Rubrik">
                 <h1>Rubrik1</h1>
