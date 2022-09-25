@@ -6,12 +6,7 @@ toggleButton.addEventListener('click', () => {
 })
 
 
-function myFunction() {
-var element = document.getElementsByClassName("darklight");
-for(let i = 0; i < element.length; i += 1){
-element.item(i).classList.toggle("dark-mode");
+function LengthConverter(valNum) {
+  document.getElementById("outputMeters").innerHTML=valNum/10;
+
   }
-console.log(element)
-//element.classList.toggle("dark-mode");
-  }
-   

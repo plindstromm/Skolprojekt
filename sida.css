@@ -93,6 +93,7 @@ body {
    grid-column-start: 2;
    margin-top: 40px;
    margin-bottom: 0px;
+   border-radius: 10px;
    
 }
 
@@ -118,6 +119,7 @@ body {
    padding-left: 40px;
    padding-right: 40px;
    word-spacing: 5px;
+   border-radius: 10px;
 
 }
 
@@ -201,6 +203,7 @@ font-size: 1.1rem;
    text-transform: uppercase;
    opacity: .4;
 }
+
 
 @media (max-width: 800px) {
    .main{
