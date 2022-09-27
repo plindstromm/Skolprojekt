@@ -84,7 +84,7 @@
     width: 100%;
     background-image: url(/img/han.jpg);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -93,11 +93,13 @@
  .container-main{
    border: solid gray;
    grid-row-start: 1;
-   margin-left: 40px;
-   margin-top: 50px;
-   margin-bottom: 50px;
-   padding: 40px;
-   display: grid;
+   margin: 40px auto;
+   width: 80%;
+   padding: 20px;
+   
+  
+   
+   
    
  }
  
@@ -106,16 +108,11 @@
     background-color: gray;
     border-radius: 5px;
     padding: 5px;
+    width: 300px;
+   
 }
 
-.slider{
-   overflow: hidden;
-   height: 400px;
-   width: 400px;
-   margin-left: 20px;
-   margin-top: 30px;
 
-}
 
 .container-slider{
   display: flex;
@@ -123,6 +120,11 @@
    width: 400px;
    position: relative;
    margin-bottom: 100px;
+   overflow: hidden;
+   height: 300px;
+   width: 400px;
+   margin-left: 20px;
+   margin-top: 30px;
    
    
 }
@@ -154,15 +156,20 @@
    -webkit-animation-play-state: running;
 }
 .img-container{
-   height: auto;
+   height: 300px;
    width: 400px;
    float: left;  
-   object-fit: contain;
-   
+
+}
+
+.img-container img {
+   width: 100%;
+   height: 300px;
+   object-fit: cover;
 }
 
 .contacts{
-   grid-row-start: 3;
+   
    color: white;
 }
 
@@ -173,6 +180,7 @@
     width: 100%;
     padding-top: 40px;
     color: #fff;
+   
     
  }
  
@@ -259,7 +267,21 @@
     .text{
        margin-right: 2rem;
     }
-     }
+
+    .main{
+      grid-column: auto;
+      grid-template-rows: 2, 1fr;
+    }
+
+    .container-main{
+      grid-row: 1/2;
+    }
+    
+    .contacts{
+      grid-row: 2/3;
+    }
+     
+
  
  @media (max-width: 500px) {
     .navbar {
