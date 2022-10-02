@@ -88,6 +88,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+   padding-bottom: 100px;
  }
 
  .container-main{
@@ -123,7 +124,6 @@
    overflow: hidden;
    height: 300px;
    width: 400px;
-   margin-left: 20px;
    margin-top: 30px;
    
    
@@ -169,13 +169,25 @@
 }
 
 .contacts{
+   border: solid gray;
+   grid-row-start: 1;
+   margin: 40px auto;
+   width: 80%;
+   padding: 20px;
+   color: rgb(231, 205, 150);
    
-   color: white;
+
+}
+
+.contacts p{
+   font-family: Indie Flower;
+   font-size: 35px;
+   color: rgb(231, 205, 150);
 }
 
  
- footer{
-    background-color: #111;
+ footer{ 
+   background-color: #111;
     height: auto;
     width: 100%;
     padding-top: 40px;
@@ -256,17 +268,39 @@
     .text1 p{
        background-color: #000;
     }
+     
+    .container-slider{
+      width: 300px;
+    }
+
+    @media (max-width:900px){
+
+      .converter{
+      width: 250px;
+
+      }
+    
  }
  @media (max-width:800px){
     .text{
        margin-left: 2rem;
+    }
+    .container-slider{
+      width: 200px;
+      height: 100;
     }
  }
  
  @media (max-width:700px){
     .text{
        margin-right: 2rem;
+    } 
+    .converter{
+      width: 200px;
+      padding: 2px;
     }
+     }
+   
 
     .main{
       grid-column: auto;
@@ -279,39 +313,56 @@
     
     .contacts{
       grid-row: 2/3;
+      color: white;
     }
-     
+
+    .contacts p{
+      color: rgb(46, 46, 6);
+    }
+    
+ } 
 
  
  @media (max-width: 500px) {
-    .navbar {
+
+    .navbar{
         flex-direction: column;
         align-items: flex-start;
     }
  
-    .toggle-button {
+    .toggle-button{
         display: flex;
     }
  
-    .navbar-links {
+    .navbar-links{
         display: none;
         width: 100%;
     }
  
-    .navbar-links ul {
+    .navbar-links ul{
         width: 100%;
         flex-direction: column;
     }
  
-    .navbar-links ul li {
+    .navbar-links ul li{
         text-align: center;
     }
  
-    .navbar-links ul li a {
+    .navbar-links ul li a{
         padding: .5rem 1rem;
     }
  
-    .navbar-links.active {
+    .navbar-links.active{
         display: flex;
+    }
+
+    .container-main{
+      margin: 5px auto;
+      margin-left: 20px;
+    }
+
+    .contacts{
+      margin: 5px auto;
+      margin-left: 20px;
     }
   }

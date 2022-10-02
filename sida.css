@@ -244,5 +244,9 @@ font-size: 1.1rem;
    .navbar-links.active {
        display: flex;
    }
+
+   .tos h1{
+      font-size: 30px;
+   }
 }
 
