@@ -10,6 +10,12 @@
 body {
    margin: 0;
    padding: 0;
+   background-image: url(img/han.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  
+ 
  
 }
 
@@ -77,14 +83,20 @@ body {
 
 .main{
    width: 100%;
-   background-image: url(/img/han.jpg);
+   
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+ 
+   
+}
+
+.dark-mode{
+   background-image:url(img/bakgrun.jpeg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   
 }
-
 
    
 

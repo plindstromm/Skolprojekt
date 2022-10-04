@@ -10,3 +10,8 @@ function LengthConverter(valNum) {
   document.getElementById("outputMeters").innerHTML=valNum/10;
 
   }
+
+  function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }

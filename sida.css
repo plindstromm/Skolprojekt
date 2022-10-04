@@ -75,15 +75,22 @@ body {
 .main{
    width:100%;
    height: auto;
-   background-image: url(/img/han.jpg);
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   background-image: url(img/han.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   
    
 }
 
+.dark-mode{
+   background-image:url(img/bakgrun.jpeg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+    }
 
 
 .tos{
