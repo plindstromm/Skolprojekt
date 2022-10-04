@@ -14,8 +14,6 @@ body {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-  
- 
  
 }
 
@@ -26,6 +24,7 @@ body {
    align-items: center;
    background-color: #111;
    color: white;
+  
 }
 
 .brand-title {

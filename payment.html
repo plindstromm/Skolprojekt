@@ -72,7 +72,7 @@
         </div>    
        </div>
        <div class="contacts">
-        <form action="/action_page.php" target="_blank" method="get" id="nameform">
+        <form target="_blank" id="nameform" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br><br>
         <label for="lname">Last name:</label><br>
@@ -82,7 +82,7 @@
         <label for="email">E-mail:</label><br>
         <input type="email" id="email" name="email" autocomplete="on"><br><br>
       </form>
-        <input type="submit" form="nameform" value="submit"><br><br><br><br><br>
+        <input id="submit-button" type="submit" form="nameform" value="submit"><br><br><br><br><br>
       
         <p>Telephone: +46xxxxxxx</p><br>
         <p>E-mail: xxx@gold.com</p>
