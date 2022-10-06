@@ -84,6 +84,20 @@
     border-radius: 10px;
  }
  
+ .background button{
+   padding: 3px;
+   margin-left: 5px;
+   margin-top: 5px;
+   border-radius: 20px;
+   font-family: montserrat;
+   border-color: none;
+   
+ }
+ 
+ .background button:hover{
+    background-color: rgb(51, 42, 42);
+    color: white;
+ }
  
  
  .main{
@@ -201,13 +215,7 @@
     width: 100%;
     padding-top: 40px;
     color: #fff;
-    
- 
-
-   
-  
-   
-    
+      
  }
  
  .footer-content{
